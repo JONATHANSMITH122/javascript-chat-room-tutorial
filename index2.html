@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+
+  <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <style>
+
+  *{
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: 0;
+
+    position: relative;
+
+  }
+
+  .general{
+
+    height: 100vh;
+
+  }
+
+  a{
+
+    text-decoration: none !important;
+
+    color: black;
+
+  }
+
+    
+
+  .material-symbols-outlined {
+
+    font-variation-settings:
+
+    'FILL' 0,
+
+    'wght' 400,
+
+    'GRAD' 0,
+
+    'opsz' 48;
+
+    font-size:xx-large;
+
+  }
+
+  #send .material-symbols-outlined {
+
+  }
+
+  html,body{
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+  }
+
+  .mess_cont{
+
+    height: 60%;
+
+    padding: 2vw 4vw;
+
+    
+
+  }
+
+  
+
+  .messages{
+
+    position: absolute;
+
+    bottom: 0;
+
+    right: 4vw;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    background: lightgray;
+
+    
+
+    padding: 10px;
+
+  
+
+    
+
+  }
+
+  .nav{
+
+    background: lightgray;
+
+    padding: 2vw 4vw;
+
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+  .nav_icon{
+
+    display: flex;
+
+    gap: 25px;
+
+  }
+
+  .nav a{
+
+    display: flex;
+
+  }
+
+  .nav .nav_icon a{
+
+    display: flex;
+
+    align-items: center;
+
+  }
+
+  #inp1{
+
+    width: 70%;
+
+    border-radius: 20px;
+
+    border: none;
+
+    background: lightgray;
+
+    padding: 15px;
+
+  }
+
+  #formm{
+
+    padding: 0 4vw;
+
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+  #formm a{
+
+    display: flex;
+
+    align-items: center;
+
+   
+
+  }
+
+  .form_cont{
+
+    border-top: 1px solid black;
+
+    padding-top: 10px;
+
+    
+
+  }
+
+  #send{
+
+    background: none !important;
+
+    border: none !important;
+
+    display: flex;
+
+    align-items: center;
+
+  }
+
+  .member_list{
+
+  }
+
+  #space{
+
+    padding-left: 4vw;
+
+  }
+
+  
+
+  </style>
+
+</head>
+
+<body>
+
+ <div class="general">
+
+  
+
+  <div class="nav">
+
+    <div class="back-title">
+
+      <a href="index2.html">
+
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+
+        <p>chat</p>
+
+      </a>
+
+     
+
+    </div>
+
+    <div class="nav_icon">
+
+      <a href="#">
+
+        <span class="material-symbols-outlined">call</span>
+
+      </a>
+
+      <a href="#">
+
+        <span class="material-symbols-outlined">group</span>
+
+      </a>
+
+      <a href="#">
+
+        <span class="material-symbols-outlined">more_vert</span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <p class="members-list" id="space"></p>
+
+  
+
+  <div class="mess_cont" >
+
+    <p class="messages"></p>
+
+  </div>
+
+  <div class="members-count" id="space">-</div>
+
+  <div class="form_cont">
+
+    <form class="message-form" onsubmit="return false;" id="formm">
+
+      <a href="#"><span id="emojiSelector" class="material-symbols-outlined">
+
+        mood
+
+        </span></a>
+
+      <input id="inp1" class="message-form__input" placeholder="Type a message.." type="text"/>
+
+      <a href="#"><span class="material-symbols-outlined">
+
+        mic
+
+        </span></a>
+
+      <a href="#"><span class="material-symbols-outlined">
+
+        photo_camera
+
+        </span></a>
+
+      
+
+      <button id="send" class="message-form__button"  type="submit"><span class="material-symbols-outlined">
+
+        send
+
+        </span></button>
+
+    
+
+    
+
+    </form>
+
+ </div>
+
+ </div>
+
+  <script src="https://kit.fontawesome.com/d15ccd782a.js" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
